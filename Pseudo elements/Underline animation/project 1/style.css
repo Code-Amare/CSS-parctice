@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover{
+    margin-top: 20vh;
+    position: relative;
+    width: max-content;
+}
+.hover::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 7px;
+    background: linear-gradient(to left, blue, red);
+    bottom: 0;
+    left: 0;
+    border-radius: 5%;
+    transition: width 0.3s ease-out;
+}
+.hover:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+.hover:active::after{
+    background: linear-gradient(to left, green, yellow);
+}

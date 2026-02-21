@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+th {
+    background: gray;
+    width: 110px;
+}
+
+td {
+    background: lightgray;
+    padding: 2px;
+    text-align: center;
+}
+
+table {
+    background: black;
+}

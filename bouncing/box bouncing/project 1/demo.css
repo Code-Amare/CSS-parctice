@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bright-gray: #bebebe;
+    --gray: #b3b3b3;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+html {
+    font-size: 20px;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(201, 201, 198);
+    border-radius: 2rem;
+    box-shadow:
+    0 1px 0 var(--gray),
+    0 3px 0 var(--gray),
+    0 5px 0 var(--gray),
+    0 7px 0 var(--gray),
+    0 9px 0 var(--gray),
+    0 11px 0 var(--gray),
+    0 13px 0 transparent,
+    0 15px 0 transparent,
+    0 17px 0 transparent,
+        0 19px 5px rgba(0, 0, 0, 0.514);
+    animation: bounce 1s ease infinite alternate;
+}
+
+@keyframes bounce {
+    100%{
+        transform: translateY(-2rem);
+        box-shadow: 
+        0 1px 0 var(--bright-gray),
+        0 2px 0 var(--bright-gray),
+        0 3px 0 var(--bright-gray),
+        0 4px 0 var(--bright-gray),
+        0 5px 0 var(--bright-gray),
+        0 6px 0 var(--bright-gray),
+        0 7px 0 var(--bright-gray),
+        0 8px 0 var(--bright-gray),
+        0 9px 0 var(--bright-gray),
+        0 60px 25px rgba(0, 0, 0, 0.3);
+        
+    }
+}
